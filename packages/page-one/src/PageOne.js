@@ -61,10 +61,10 @@ export class PageOne extends LitElement {
           To avoid semantic difficulties, "shifting up" = car going faster, "shifting down" = car
           going slower
         </li>
-        <li>Track whether or not the pedals are accelerating, braking, or neither.</li>
-        <li>Remember, you shouldn't be able to hit the gas or brake in some gears!</li>
+        <li>Track whether or not the pedals are being pressed in or not.</li>
         <li>
-          For now, don't worry about invalid gear/pedal states - we'll tackle these a little later)
+          For now, don't worry about invalid gear/pedal states that would destroy the car irl -
+          we'll tackle these a little later)
         </li>
       </ul>
     `;

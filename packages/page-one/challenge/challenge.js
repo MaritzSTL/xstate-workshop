@@ -1,11 +1,12 @@
 import { Machine } from 'xstate';
 
-const carMachine = new Machine({
+const carMachine = Machine({
   id: 'gearsPedals',
   type: 'parallel',
   states: {
-    pedals: {},
     gear: {
+      type: 'compound',
+      initial: 'park',
       states: {
         park: {
           on: {
@@ -33,6 +34,43 @@ const carMachine = new Machine({
         drive2: {
           on: {
             DOWNSHIFT: 'drive1',
+          },
+        },
+      },
+    },
+    pedals: {
+      type: 'parallel',
+      states: {
+        gas: {
+          initial: 'unpressed',
+          type: 'compound',
+          states: {
+            unpressed: {
+              on: {
+                PRESS_GAS: 'pressed',
+              },
+            },
+            pressed: {
+              on: {
+                RELEASE_GAS: 'unpressed',
+              },
+            },
+          },
+        },
+        brake: {
+          initial: 'unpressed',
+          type: 'compound',
+          states: {
+            unpressed: {
+              on: {
+                PRESS_BRAKE: 'pressed',
+              },
+            },
+            pressed: {
+              on: {
+                RELEASE_BRAKE: 'unpressed',
+              },
+            },
           },
         },
       },
