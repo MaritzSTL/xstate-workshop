@@ -1,7 +1,7 @@
 import { html, css, LitElement } from 'lit-element';
 import '../../newtab-link/newtab-link.js';
 
-export class PageTwo extends LitElement {
+export class Page02 extends LitElement {
   static get styles() {
     return css`
       :host {

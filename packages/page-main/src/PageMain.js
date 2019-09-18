@@ -27,7 +27,7 @@ export class PageMain extends LitElement {
         <newtab-link href="https://github.com/MaritzSTL/xstate-workshop/">Sauce</newtab-link>
       </p>
       <ol>
-        <li>Intro</li>
+        <li>Thinking in XState</li>
         <li>Where do I put state?</li>
         <li>How do I wire up with lit?</li>
         <li>Testing</li>
