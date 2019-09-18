@@ -51,6 +51,21 @@ export class PageOne extends LitElement {
         WYSIWYG Editor</newtab-link
       >
 
+      <h3>Events, Transitions, States</h3>
+      <p>
+        The key thing to remember is that "state" is always contextual. When people say "state,"
+        what they usually mean is "of all the possibilities this other thing we're talking about
+        could exist in, which possibilities are currently happening?"
+      </p>
+      <p>
+        "State" represents a particular system configuration at a certain point in time. The only
+        way to change state is to send an event.
+      </p>
+      <p>
+        An event can cause a "transition." Events don't always cause transitions. When they do,
+        transitions are the only way to change from one state to another.
+      </p>
+
       <h3>Challenge</h3>
       <p>
         We're going to model a car.

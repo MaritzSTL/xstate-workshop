@@ -3,7 +3,7 @@ import { classMap } from 'lit-html/directives/class-map.js';
 
 import '../../page-main/page-main.js';
 import '../../page-one/page-one.js';
-import { templateAbout } from './templateAbout.js';
+import '../../page-two/page-two.js';
 
 export class XstateWorkshop extends LitElement {
   static get properties() {
@@ -28,8 +28,10 @@ export class XstateWorkshop extends LitElement {
         return html`
           <page-one></page-one>
         `;
-      case 'about':
-        return templateAbout;
+      case 'pageTwo':
+        return html`
+          <page-two></page-two>
+        `;
       default:
         return html`
           <p>Page not found try going to <a href="#main">Main</a></p>
@@ -65,8 +67,11 @@ export class XstateWorkshop extends LitElement {
               >
             </li>
             <li>
-              <a href="#about" class=${this.__addActiveIf('about')} @click=${this.__clickPageLink}
-                >About</a
+              <a
+                href="#pageTwo"
+                class=${this.__addActiveIf('pageTwo')}
+                @click=${this.__clickPageLink}
+                >Placing State</a
               >
             </li>
           </ul>
@@ -85,7 +90,7 @@ export class XstateWorkshop extends LitElement {
       css`
         #pagewrapper {
           display: grid;
-          grid-template-columns: 1fr 5fr;
+          grid-template-columns: 1fr 3fr 1fr;
         }
       `,
     ];
