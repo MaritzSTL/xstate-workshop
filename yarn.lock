@@ -687,6 +687,20 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
+"@chameleon-ds/button@^0.1.9":
+  version "0.1.9"
+  resolved "https://registry.yarnpkg.com/@chameleon-ds/button/-/button-0.1.9.tgz#f8848eaf6fcdae9d3ccf84a433b3c6b5dbc6bb13"
+  integrity sha512-NpWABkIWGpaZNEYuBI9TGc9PYyfix3h80W4X8GK9tDCiHB1WI6yC8gRmbCpMbUXUw5MVHRZN/yvslWhR8u3HDA==
+  dependencies:
+    lit-element "^2.2.0"
+
+"@chameleon-ds/input@^0.2.11":
+  version "0.2.11"
+  resolved "https://registry.yarnpkg.com/@chameleon-ds/input/-/input-0.2.11.tgz#a3085b5490045fd85726d8e1873d689a4b49712c"
+  integrity sha512-9Hjt6BffHyK+m+ZztvJHVRiJ/0ijj99UPDNV6XMyxMI3a/VHn/35JgupPviHC84Dj4osXAUKg5H7TZw8wWu0PA==
+  dependencies:
+    lit-element "^2.2.0"
+
 "@emotion/babel-utils@^0.6.4":
   version "0.6.10"
   resolved "https://registry.yarnpkg.com/@emotion/babel-utils/-/babel-utils-0.6.10.tgz#83dbf3dfa933fae9fc566e54fbb45f14674c6ccc"
