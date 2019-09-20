@@ -1,5 +1,5 @@
 import { LitElement, html, css } from 'lit-element';
-import { interpret } from 'xstate';
+import { interpret } from 'xstate/es/index.js';
 import { config as shoppingCartConfig } from './shoppingCartConfig.js';
 import '@chameleon-ds/button';
 import '@chameleon-ds/input';

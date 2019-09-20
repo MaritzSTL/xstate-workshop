@@ -1,4 +1,4 @@
-import { Machine } from 'xstate';
+import { Machine } from 'xstate/es/index.js';
 
 const config = Machine({ id: 'blank' });
 

@@ -1,5 +1,6 @@
 import { html, css, LitElement } from 'lit-element';
 import '../../newtab-link/newtab-link.js';
+import './short-wizard.js';
 
 export class Page04 extends LitElement {
   static get styles() {
@@ -25,7 +26,9 @@ export class Page04 extends LitElement {
   render() {
     return html`
       <h2>${this.title}</h2>
-      Actions | Machines | LitElement-powered components
+      <p>See packages/page-04/test for how-to's</p>
+
+      <short-wizard></short-wizard>
     `;
   }
 }

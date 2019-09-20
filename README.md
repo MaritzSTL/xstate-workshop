@@ -1,24 +1,16 @@
-<p align="center">
-  <img width="200" src="https://open-wc.org/hero.png"></img>
-</p>
+# XState Workshop (Currently wip)
 
-## Open-wc Starter App
+This workshop is a quick dive into getting familiar with XState.
 
-[![Built with open-wc recommendations](https://img.shields.io/badge/built%20with-open--wc-blue.svg)](https://github.com/open-wc)
+## Installation
 
-## Quickstart
-
-To get started:
-
-```sh
-npm init @open-wc
-# requires node 10 & npm 6 or higher
+```
+yarn install
 ```
 
-## Scripts
+Then, to get tests to be able to run, hop into `node_modules/xstate/es/environment.js`
 
-- `start` runs your app for development, reloading on file changes
-- `start:build` runs your app after it has been built using the build command
-- `build` builds your app and outputs it in your `dist` directory
-- `test` runs your test suite with Karma
-- `lint` runs the linter for your project
+```
+# replace the top line with:
+export var IS_PRODUCTION = false
+```

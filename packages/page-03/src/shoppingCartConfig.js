@@ -1,4 +1,4 @@
-import { Machine, assign } from 'xstate';
+import { Machine, assign } from 'xstate/es/index.js';
 
 const initialContext = {
   items: [],
