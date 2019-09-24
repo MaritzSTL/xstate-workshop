@@ -87,13 +87,15 @@ export class Page02 extends LitElement {
       <newtab-link href="https://xstate.js.org/docs/guides/transitions.html#transient-transitions">Transient Transitions</newtab-link>
 
       <h3>Challenge</h3>
-      <p>We're going to model a bank account.</p>
+      <p>We're going to model the movement of a car.</p>
       <ul>
-        <li>The account starts at 0.</li>
-        <li>Deposits increase the amount.</li>
-        <li>Withdrawals decrease the amount.</li>
-        <li>If the balance is negative, no withdrawals can be made.</li>
-        <li>Let's have some other information in our state to make sure we're only updating the parts we intend. To start, our sentiment is "not panicking." But if we decide to change our mind (say we PANIC), then we should update our sentiment</li>
+        <li>Speed and gas start at 0.</li>
+        <li>'accelerate' will increase the speed by 1, and use up 1 gas. You can only accelerate if you have gas.</li>
+        <li>'decelerate' will decrease the speed by 2.</li>
+        <li>'coast' will decrease the speed by 1 and use up no gas.</li>
+        <li>speedChanging will resolve to stationary, if speed is zero, or moving, if speed is more than zero.</li>
+        <li><strong>Bonus:</strong> you can supply custom amounts when you GAS and BRAKE to represent how hard you push the pedal</li>
+        <li><strong>Bonus:</strong> speed and gas shouldn't be able to drop below 0!</li>
       </ul>
     `;
   }
