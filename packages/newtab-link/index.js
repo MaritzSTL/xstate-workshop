@@ -1,3 +1,1 @@
-import { NewtabLink } from './src/NewtabLink.js';
-
-export { NewtabLink };
+export { NewtabLink } from './src/NewtabLink.js';

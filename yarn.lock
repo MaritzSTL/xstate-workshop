@@ -1576,6 +1576,29 @@
   dependencies:
     "@types/react" "*"
 
+"@ui5/webcomponents-base@0.15.0":
+  version "0.15.0"
+  resolved "https://registry.yarnpkg.com/@ui5/webcomponents-base/-/webcomponents-base-0.15.0.tgz#331b2cb577bc9b3eaae6ac79cc50965c184bf565"
+  integrity sha512-djR0i6COEIs6j5q/iLMgpk/xALohk/eV9UHdjV03kL2Augtl/+jv1MWIszb1/+q1xXDK8ZtD/yXCo542Syd8rg==
+  dependencies:
+    "@ui5/webcomponents-core" "0.15.0"
+    lit-html "^1.0.0"
+    regenerator-runtime "0.12.1"
+    url-search-params-polyfill "^5.0.0"
+
+"@ui5/webcomponents-core@0.15.0":
+  version "0.15.0"
+  resolved "https://registry.yarnpkg.com/@ui5/webcomponents-core/-/webcomponents-core-0.15.0.tgz#13b7f4fb014e121e5e9e377f5a1277f183bc6838"
+  integrity sha512-3Q0hYYgyRmmHt/1UYxFlKH/k2PvC7/MwbQOGMQzf56D0FTv28HtSuh9MtaT3Ls+nkggHp1Y7008qECohXhBcRw==
+
+"@ui5/webcomponents@^1.0.0-rc.2":
+  version "1.0.0-rc.2"
+  resolved "https://registry.yarnpkg.com/@ui5/webcomponents/-/webcomponents-1.0.0-rc.2.tgz#c8f6a0c5688b6808103263dc9c35aeeb1ad128db"
+  integrity sha512-uis6wKlOoKt93MCzrrCKu7J0FrddCX9xcU/uKbFEt4nX4dGxB1i7qHn456omRZ05WpIrSqh3hEjrUKXIzeIpTQ==
+  dependencies:
+    "@ui5/webcomponents-base" "0.15.0"
+    "@ui5/webcomponents-core" "0.15.0"
+
 "@webassemblyjs/ast@1.8.5":
   version "1.8.5"
   resolved "https://registry.yarnpkg.com/@webassemblyjs/ast/-/ast-1.8.5.tgz#51b1c5fe6576a34953bf4b253df9f0d490d9e359"
@@ -6898,14 +6921,14 @@ listr@^0.14.2:
     p-map "^2.0.0"
     rxjs "^6.3.3"
 
-lit-element@^2.0.1, lit-element@^2.2.0:
+lit-element@^2.2.0, lit-element@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/lit-element/-/lit-element-2.2.1.tgz#79c94d8cfdc2d73b245656e37991bd1e4811d96f"
   integrity sha512-ipDcgQ1EpW6Va2Z6dWm79jYdimVepO5GL0eYkZrFvdr0OD/1N260Q9DH+K5HXHFrRoC7dOg+ZpED2XE0TgGdXw==
   dependencies:
     lit-html "^1.0.0"
 
-lit-html@^1.0.0, lit-html@^1.1.0:
+lit-html@^1.0.0, lit-html@^1.1.0, lit-html@^1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/lit-html/-/lit-html-1.1.2.tgz#2e3560a7075210243649c888ad738eaf0daa8374"
   integrity sha512-FFlUMKHKi+qG1x1iHNZ1hrtc/zHmfYTyrSvs3/wBTvaNtpZjOZGWzU7efGYVpgp6KvWeKF6ql9/KsCq6Z/mEDA==
@@ -8441,7 +8464,7 @@ pretty-hrtime@^1.0.3:
   resolved "https://registry.yarnpkg.com/pretty-hrtime/-/pretty-hrtime-1.0.3.tgz#b7e3ea42435a4c9b2759d99e0f201eb195802ee1"
   integrity sha1-t+PqQkNaTJsnWdmeDyAesZWALuE=
 
-prismjs@^1.8.4, prismjs@~1.17.0:
+prismjs@^1.17.1, prismjs@^1.8.4, prismjs@~1.17.0:
   version "1.17.1"
   resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.17.1.tgz#e669fcbd4cdd873c35102881c33b14d0d68519be"
   integrity sha512-PrEDJAFdUGbOP6xK/UsfkC5ghJsPJviKgnQOoxaDbBjwc8op68Quupwt1DeAFoG8GImPhiKXAvvsH7wDSLsu1Q==
@@ -9112,15 +9135,15 @@ regenerate@^1.2.1, regenerate@^1.4.0:
   resolved "https://registry.yarnpkg.com/regenerate/-/regenerate-1.4.0.tgz#4a856ec4b56e4077c557589cae85e7a4c8869a11"
   integrity sha512-1G6jJVDWrt0rK99kBjvEtziZNCICAuvIPkSiUFIQxVP06RCVpq3dmDo2oi6ABpYaDYaTRr67BEhL8r1wgEZZKg==
 
+regenerator-runtime@0.12.1, regenerator-runtime@^0.12.1:
+  version "0.12.1"
+  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.12.1.tgz#fa1a71544764c036f8c49b13a08b2594c9f8a0de"
+  integrity sha512-odxIc1/vDlo4iZcfXqRYFj0vpXFNoGdKMAUieAlFYO6m/nl5e9KR/beGf41z4a1FI+aQgtjhuaSlDxQ0hmkrHg==
+
 regenerator-runtime@^0.11.0:
   version "0.11.1"
   resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.11.1.tgz#be05ad7f9bf7d22e056f9726cee5017fbf19e2e9"
   integrity sha512-MguG95oij0fC3QV3URf4V2SDYGJhJnJGqvIIgdECeODCT98wSWDAJ94SSuVpYQUoTcGUIL6L4yNB7j1DFFHSBg==
-
-regenerator-runtime@^0.12.1:
-  version "0.12.1"
-  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.12.1.tgz#fa1a71544764c036f8c49b13a08b2594c9f8a0de"
-  integrity sha512-odxIc1/vDlo4iZcfXqRYFj0vpXFNoGdKMAUieAlFYO6m/nl5e9KR/beGf41z4a1FI+aQgtjhuaSlDxQ0hmkrHg==
 
 regenerator-runtime@^0.13.2:
   version "0.13.3"
@@ -10798,6 +10821,11 @@ url-parse@^1.4.3:
   dependencies:
     querystringify "^2.1.1"
     requires-port "^1.0.0"
+
+url-search-params-polyfill@^5.0.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/url-search-params-polyfill/-/url-search-params-polyfill-5.1.0.tgz#f0405dcc2e921bf7f5fdf8c4e616f1e8088ef31b"
+  integrity sha512-yjFY7uw2xRf9e8Mg4ZVkZwtp8dMCC4cbBkEIZiTDpuSY2WJ9+Quw0wRhxncv32qaMQwmBQT+P847rO8PrFhhDA==
 
 url@^0.11.0:
   version "0.11.0"

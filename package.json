@@ -64,8 +64,10 @@
   "dependencies": {
     "@chameleon-ds/button": "^0.1.9",
     "@chameleon-ds/input": "^0.2.11",
-    "lit-element": "^2.0.1",
-    "lit-html": "^1.0.0",
+    "@ui5/webcomponents": "^1.0.0-rc.2",
+    "lit-element": "^2.2.1",
+    "lit-html": "^1.1.2",
+    "prismjs": "^1.17.1",
     "xstate": "^4.6.7"
   }
 }

@@ -1,0 +1,12 @@
+<ui5-panel
+accessible-role="Complementary"
+class="full-width"
+.collapsed=${true}
+.headerText="${'Updater as a Function'}"
+>
+<prism-snippet>
+  <!-- prettier-ignore -->
+   <code>
+   </code>
+</prism-snippet>
+</ui5-panel>

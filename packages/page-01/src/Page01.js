@@ -1,5 +1,7 @@
 import { html, css, LitElement } from 'lit-element';
+import '@ui5/webcomponents/dist/Panel.js';
 import '../../newtab-link/newtab-link.js';
+import '../../prism-snippet/prism-snippet.js';
 
 export class Page01 extends LitElement {
   static get styles() {
@@ -42,11 +44,111 @@ export class Page01 extends LitElement {
         <li>What <strong>events</strong> happen?</li>
         <li>What <strong>transitions</strong> can occur between what states?</li>
       </ul>
+
+      <ui5-panel
+        accessible-role="Complementary"
+        class="full-width"
+        .collapsed=${true}
+        .headerText="${'Stoplight Machine'}"
+      >
+        <prism-snippet>
+          <!-- prettier-ignore -->
+          <code>
+        const lightMachine = Machine({
+          id: 'light',
+          initial: 'green',
+          type: 'compound',
+          states: {
+            green: {
+              on: {
+                TIMER: 'yellow'
+              }
+            },
+            yellow: {
+              on: {
+                TIMER: 'red'
+              }
+            },
+            red: {
+              on: {
+                TIMER: 'green'
+              }
+            }
+          }
+        });
+        </code>
+        </prism-snippet>
+      </ui5-panel>
       <newtab-link href="https://xstate.js.org/viz/?gist=f07b56d9dfd72e808c5e5f6a779f91ca"
         >Stoplight Visualization</newtab-link
       >
 
       <h3>WYSIWYG</h3>
+      <ui5-panel
+        accessible-role="Complementary"
+        class="full-width"
+        .collapsed=${true}
+        .headerText="${'WYSIWYG Controls'}"
+      >
+        <prism-snippet>
+          <!-- prettier-ignore -->
+          <code>
+          const wordMachine = Machine({
+          id: 'word',
+          type: 'parallel',
+          states: {
+            bold: {
+              initial: 'off',
+              states: {
+                on: {
+                  on: { TOGGLE_BOLD: 'off' }
+                },
+                off: {
+                  on: { TOGGLE_BOLD: 'on' }
+                }
+              }
+            },
+            underline: {
+              initial: 'off',
+              states: {
+                on: {
+                  on: { TOGGLE_UNDERLINE: 'off' }
+                },
+                off: {
+                  on: { TOGGLE_UNDERLINE: 'on' }
+                }
+              }
+            },
+            italics: {
+              initial: 'off',
+              states: {
+                on: {
+                  on: { TOGGLE_ITALICS: 'off' }
+                },
+                off: {
+                  on: { TOGGLE_ITALICS: 'on' }
+                }
+              }
+            },
+            list: {
+              initial: 'none',
+              states: {
+                none: {
+                  on: { BULLETS: 'bullets', NUMBERS: 'numbers' }
+                },
+                bullets: {
+                  on: { NONE: 'none', NUMBERS: 'numbers' }
+                },
+                numbers: {
+                  on: { BULLETS: 'bullets', NONE: 'none' }
+                }
+              }
+            }
+          }
+        });
+        </code>
+        </prism-snippet>
+      </ui5-panel>
       <newtab-link href="https://xstate.js.org/viz/?gist=5c48e08292c6491ad1ab6ee7328322b0">
         WYSIWYG Editor</newtab-link
       >

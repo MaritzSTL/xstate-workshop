@@ -26,8 +26,18 @@ export class Page04 extends LitElement {
   render() {
     return html`
       <h2>${this.title}</h2>
-      <p>See packages/page-04/test for how-to's</p>
-
+      You can:
+      <ul>
+        <li>Test your machine in isolation</li>
+        <li>And/or test your full component</li>
+      </ul>
+      For lots of great examples, check out
+      <newtab-link href="https://github.com/davidkpiano/xstate/tree/master/test"
+        >XState tests</newtab-link
+      >
+      (Check out the machine tests)
+      <p>See packages/page-04/test for how-to's testing the following:</p>
+      <br />
       <short-wizard></short-wizard>
     `;
   }
